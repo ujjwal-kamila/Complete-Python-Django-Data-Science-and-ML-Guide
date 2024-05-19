@@ -1,5 +1,4 @@
 # Session 05_  11.Introduction to Functions and Built in Functions
-
 # Built in functions 
 print("Hello")
 
