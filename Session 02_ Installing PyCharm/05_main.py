@@ -1,5 +1,5 @@
 # Session 02_ Installing PyCharm
-
+# 05 to 06
 # download pycharm for free 
 #"https://www.jetbrains.com/pycharm/download/?section=windows"
 

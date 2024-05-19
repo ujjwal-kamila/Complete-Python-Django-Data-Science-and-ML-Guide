@@ -1,4 +1,5 @@
 # Objects in Python 
+# 08 to 10 
 # all entities in python are objects ex :  int str float
 
 #  Main  data types in python
