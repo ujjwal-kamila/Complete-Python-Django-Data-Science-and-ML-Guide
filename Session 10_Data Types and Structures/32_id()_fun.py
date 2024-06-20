@@ -17,3 +17,6 @@ print("Address is num is  :",id(num))
 other_num = num 
 print("Address of other num ",id(other_num))
 
+# Check both adress is same or not 
+print((id(other_num))==(id(num)))
+
