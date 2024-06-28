@@ -17,4 +17,35 @@ print(type(long_str))
 print(type(long_str)== str)
 print(id(long_str))
 
+# We cannot write more than 79 characters in one line so we use multiline
+mul_str = "This is a very, very,"\
+    " very, very,"\
+    " very, very,"\
+    " very, very,"\
+    " very, very,"\
+    " very, very,"\
+    " very, very,"\
+    " very, very,"\
+    " very, very,"\
+    " very, very,"\
+        "long string."
+    
+print(mul_str)
 
+mul_str1 = '''
+    This 
+    is 
+    a 
+    very, 
+    very ,very,
+    very, 
+    very ,very, 
+    very, very ,
+    very, very ,
+    very ,very ,
+    very ,very ,
+    very ,very, 
+    very, very
+    long string'''
+    
+print(mul_str1)
