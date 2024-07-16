@@ -14,6 +14,6 @@ input_str = input("Eabcnter any numbers : ")
 print(type(input_str))    # <class 'str'>
 
 # converting into str
-input_num = int(input_str)
-print(type(input_num))    #<class 'int'>
+input = int(input_str)
+print(type(input))    #<class 'int'>
 
