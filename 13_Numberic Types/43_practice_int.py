@@ -10,10 +10,15 @@ print("Subtraction is : ",sub)
 
 # converting str to int 
 # Taking user input 
-input_str = input("Eabcnter any numbers : ")
+input_str = input("Enter any numbers : ")
 print(type(input_str))    # <class 'str'>
 
 # converting into str
-input = int(input_str)
-print(type(input))    #<class 'int'>
+# Add execption handeling
+try:
+    input = int(input_str)
+    print(type(input))    #<class 'int'>
+except ValueError:
+    print("Unable to convert to intger")
+    
 
