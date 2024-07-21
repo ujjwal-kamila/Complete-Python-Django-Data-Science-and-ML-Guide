@@ -1,4 +1,4 @@
-# # 49. Type Conversion
+# 49. Type Conversion
 
 # # Type conversion is nessesary for operations & handle correct data types 
 # # print(10 + '5')  # type error 
@@ -57,58 +57,3 @@
 
 # # To get help or descrption of the methods "help()"
 # print(help(num.__add__))
-
-
-# Let's make an class that constaints all magic methods
-class SimpleExample:
-    def __init__(self, value):
-        self.value = value
-
-    def __add__(self, other):
-        return SimpleExample(self.value + other.value)
-
-    def __eq__(self, other):
-        return self.value == other.value
-
-    def __and__(self, other):
-        return SimpleExample(self.value & other.value)
-
-    def __or__(self, other):
-        return SimpleExample(self.value | other.value)
-
-    def __ne__(self, other):
-        return self.value != other.value
-
-    def __str__(self):
-        return f"SimpleExample({self.value})"
-
-
-# Creating instances
-obj1 = SimpleExample(5)
-obj2 = SimpleExample(3)
-
-# Using __add__()
-add_result = obj1 + obj2
-
-# Using __eq__()
-eq_result = obj1 == obj2
-
-# Using __and__()
-and_result = obj1 & obj2
-
-# Using __or__()
-or_result = obj1 | obj2
-
-# Using __ne__()
-ne_result = obj1 != obj2
-
-# Using __str__()
-str_result = str(obj1)
-
-# Printing results
-print("Addition Result:", add_result)  
-print("Equality Result:", eq_result) 
-print("Bitwise AND Result:", and_result)  
-print("Bitwise OR Result:", or_result)  
-print("Inequality Result:", ne_result)
-print("String Representation:", str_result)
