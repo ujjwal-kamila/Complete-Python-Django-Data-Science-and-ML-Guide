@@ -60,55 +60,51 @@
 
 
 # Let's make an class that constaints all magic methods
-class SimpleExample:
+class Magic:
     def __init__(self, value):
         self.value = value
 
     def __add__(self, other):
-        return SimpleExample(self.value + other.value)
+        return Magic(self.value + other.value)
 
     def __eq__(self, other):
         return self.value == other.value
 
     def __and__(self, other):
-        return SimpleExample(self.value & other.value)
+        return Magic(self.value & other.value)
 
     def __or__(self, other):
-        return SimpleExample(self.value | other.value)
+        return Magic(self.value | other.value)
 
     def __ne__(self, other):
         return self.value != other.value
 
     def __str__(self):
-        return f"SimpleExample({self.value})"
+        return f"Magic({self.value})"
 
 
 # Creating instances
-obj1 = SimpleExample(5)
-obj2 = SimpleExample(3)
+obj1 = Magic(5)
+obj2 = Magic(3)
 
 # Using __add__()
 add_result = obj1 + obj2
+print("Addition Result:", add_result)  
 
-# Using __eq__()
+    # Using __eq__()
 eq_result = obj1 == obj2
+print("Equality Result:", eq_result)  
 
 # Using __and__()
 and_result = obj1 & obj2
-
+print("Bitwise AND Result:", and_result)  
 # Using __or__()
 or_result = obj1 | obj2
-
+print("Bitwise OR Result:", or_result)  
 # Using __ne__()
 ne_result = obj1 != obj2
+print("Inequality Result:", ne_result)  
 
 # Using __str__()
 str_result = str(obj1)
-
-# Printing results
-print("Addition Result:", add_result)  
-print("Equality Result:", eq_result) 
-print("Bitwise AND Result:", and_result)  
-print("Bitwise OR Result:", or_result)  
-print("Inequality Result:", ne_result)
-print("String Representation:", str_result)
+print("String Representation:", str_result) 
