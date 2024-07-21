@@ -107,4 +107,4 @@ print("Inequality Result:", ne_result)
 
 # Using __str__()
 str_result = str(obj1)
-print("String Representation:", str_result) 
+print("String Representation:", str_result)
