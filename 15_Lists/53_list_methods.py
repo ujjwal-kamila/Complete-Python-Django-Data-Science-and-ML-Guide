@@ -91,4 +91,3 @@ print("middle numbers is :",middle_num)
 last_two_num = odd_num[-2:]
 print("Last two numbers is :",last_two_num)
 
-
