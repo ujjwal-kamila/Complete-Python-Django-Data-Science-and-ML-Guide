@@ -1,2 +1,0 @@
-
-print(my_car)

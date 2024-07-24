@@ -64,3 +64,4 @@ my_lst = [100,True,'abe',3.14]
 copy_lst = my_list
 copy_lst.append(None)
 print(my_lst)
+
