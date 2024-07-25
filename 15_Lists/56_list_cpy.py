@@ -65,9 +65,23 @@ print(first_list)
 
 
 # Lists : Task 2 
-print("\n....Task : 2...\n")
+print("\n....Task : 2....\n")
 # 1.Create two lists 
+list1 = [40,3.14,True,None]
+list1 = [8.9,None,False,'Task']
+print("List--1 is :",list1)
+print("List--2 is :",list2)
+
 # 2.Combine two list using + oprerator
+combine_list = list1 + list2
+print("Combined list : ",combine_list)
+
 # 3.Detemine which magic method of lists is called when using the + operator
+# The + operator calls the "__add__" magic method for lists
+
 # 4.Merge lists using the magic mehtod
+combine_list_magicmethod = list1.__add__(list2)
 # 5.Print the results to the terminal
+print("Combined list using magic method: ",combine_list_magicmethod)
+
+
