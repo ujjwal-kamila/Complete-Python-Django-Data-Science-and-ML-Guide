@@ -39,6 +39,7 @@ print("sorted merged list :",mergred_list)
 my_list = [True, None, 'ABC', 10, 3.14]
 my_list[2] = 'Ujjwal'
 print(my_list)
+print("\n\n")
 
 
 #55. Copying Lists
@@ -61,7 +62,10 @@ print(id(my_cars1) == id(copied_cars1))
 
 # 56. Practice - Copying Lists
 my_lst = [100,True,'abe',3.14]
-copy_lst = my_list
+copy_lst = my_lst
 copy_lst.append(None)
+copy_lst.append(True)
 print(my_lst)
+print(copy_lst)
+
 

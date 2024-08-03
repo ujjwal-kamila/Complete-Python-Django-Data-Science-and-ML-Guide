@@ -34,7 +34,7 @@ print(lst)
 lst.pop(0)   # remove 0th element False
 print(lst)
 
-removed_element = lst.pop(0)   # remove 0th element 3110
+removed_element = lst.pop()   # remove 0th element 3110
 print(lst)
 print("Removed Element is",removed_element)
 
