@@ -53,8 +53,6 @@ bike1[key_name] = 'Black'
 print("change color as Black ",bike1)
 
 
-
-
 print("\n\n")
 
 
@@ -97,3 +95,5 @@ car2 = {
 }
 # Compare car1 and car2
 print(car1==car2)
+
+
