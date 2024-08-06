@@ -40,3 +40,19 @@ print(len(mrBean_details))
 # Delete any key
 del mrBean_details['Education']
 print("After Deletion :",mrBean_details)
+
+# if key not in dict then keyerror
+# check the key is avilable or not(None)
+print(mrBean_details.get('salary'))
+
+# get specific details 
+print(mrBean_details.get('Age'))
+print(mrBean_details.get('Name'))
+print(mrBean_details.get('Work'))
+print(mrBean_details.get('salary',0))
+
+
+# Magic attribute __doc__
+my_dict  = { }
+print(my_dict.__doc__)
+
