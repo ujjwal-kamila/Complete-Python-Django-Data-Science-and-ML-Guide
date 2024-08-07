@@ -56,3 +56,71 @@ print(mrBean_details.get('salary',0))
 my_dict  = { }
 print(my_dict.__doc__)
 
+
+
+# more examples 
+# Nested dictionary
+students = {
+    "student1": {
+        "name": "John",
+        "age": 20,
+        "roll": "CSE101",
+        "branch": "CSE",
+        "marks": {
+            "math": 85,
+            "physics": 90,
+            "chemistry": 78
+        }
+    },
+    "student2": {
+        "name": "Emma",
+        "age": 21,
+        "roll": "IT202",
+        "branch": "IT",
+        "marks": {
+            "math": 88,
+            "physics": 92,
+            "chemistry": 81
+        }
+    },
+    "student3": {
+        "name": "Michael",
+        "age": 22,
+        "roll": "ECE303",
+        "branch": "ECE",
+        "marks": {
+            "math": 82,
+            "physics": 87,
+            "chemistry": 79
+        }
+    },
+    "student4": {
+        "name": "Sophia",
+        "age": 23,
+        "roll": "EE404",
+        "branch": "EE",
+        "marks": {
+            "math": 90,
+            "physics": 85,
+            "chemistry": 88
+        }
+    }
+}
+
+# Accessing a value (e.g., Emma's physics mark)
+print("Emma's Physics Mark:", students["student2"]["marks"]["physics"])
+
+# Changing a value (e.g., update Michael's age)
+students["student3"]["age"] = 23
+
+# Printing the modified dictionary
+print("\nModified Students Dictionary:")
+for student, details in students.items():
+    print(f"\n{student}:")
+    for key, value in details.items():
+        if isinstance(value, dict):
+            print(f"  {key}:")
+            for subject, mark in value.items():
+                print(f"    {subject}: {mark}")
+        else:
+            print(f"  {key}: {value}")
