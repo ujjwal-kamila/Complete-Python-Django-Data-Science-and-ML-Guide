@@ -53,8 +53,8 @@ print(mrBean_details.get('salary',0))
 
 
 # Magic attribute __doc__
-my_dict  = { }
-print(my_dict.__doc__)
+# my_dict  = { }
+# print(my_dict.__doc__)
 
 
 
@@ -112,6 +112,7 @@ print("Emma's Physics Mark:", students["student2"]["marks"]["physics"])
 
 # Changing a value (e.g., update Michael's age)
 students["student3"]["age"] = 23
+print(students)
 
 # Printing the modified dictionary
 print("\nModified Students Dictionary:")
