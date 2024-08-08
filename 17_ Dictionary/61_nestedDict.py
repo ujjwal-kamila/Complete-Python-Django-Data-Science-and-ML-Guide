@@ -58,8 +58,7 @@ print(mrBean_details.get('salary',0))
 
 
 
-# more examples 
-# Nested dictionary
+# more examples of nested dict
 students = {
     "student1": {
         "name": "John",
@@ -114,14 +113,14 @@ print("Emma's Physics Mark:", students["student2"]["marks"]["physics"])
 students["student3"]["age"] = 23
 print(students)
 
-# Printing the modified dictionary
-print("\nModified Students Dictionary:")
-for student, details in students.items():
-    print(f"\n{student}:")
-    for key, value in details.items():
-        if isinstance(value, dict):
-            print(f"  {key}:")
-            for subject, mark in value.items():
-                print(f"    {subject}: {mark}")
-        else:
-            print(f"  {key}: {value}")
+# # Printing the modified dictionary
+# print("\nModified Students Dictionary:")
+# for student, details in students.items():
+#     print(f"\n{student}:")
+#     for key, value in details.items():
+#         if isinstance(value, dict):
+#             print(f"  {key}:")
+#             for subject, mark in value.items():
+#                 print(f"    {subject}: {mark}")
+#         else:
+#             print(f"  {key}: {value}")
