@@ -1,5 +1,5 @@
 # 61. Other Operations with Dictionaries
-# nested dictionary
+# nested dictionary 
 names = {
     'student1':{
         'name':'David',
@@ -124,3 +124,6 @@ for student, details in students.items():
                 print(f"    {subject}: {mark}")
         else:
             print(f"  {key}: {value}")
+
+
+ git commit --amend --date="2024-08-10 23:10:58"
