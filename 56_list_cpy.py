@@ -74,7 +74,7 @@ print("List--2 is :",list2)
 
 # 2.Combine two list using + oprerator
 combine_list = list1 + list2
-print("Combined list : ",combine_list)
+print("Combined list using + operator  : ",combine_list)
 
 # 3.Detemine which magic method of lists is called when using the + operator
 # The + operator calls the "__add__" magic method for lists
