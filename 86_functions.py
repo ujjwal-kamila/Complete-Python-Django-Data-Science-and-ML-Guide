@@ -18,6 +18,8 @@ print(f"Before swap a = {a},b = {b} ")
 a,b = swap(a,b)
 print(f"After swap a = {a},b = {b} ")
 
+# 87. Calling Functions: Arguments vs Parameters
+
 # sample examples
 def my_fun(a,b):
     a = a+1
@@ -26,3 +28,13 @@ def my_fun(a,b):
 
 result = my_fun(5,8)
 print(result)
+
+# 88. Shortest Function in Python
+# examples
+def new_fun():
+    pass
+print(new_fun())        # return None
+
+# more examples
+def sum(a,b): return a*b
+def show(a,b) : return a , b
