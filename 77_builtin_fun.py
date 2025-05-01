@@ -24,6 +24,9 @@ print("Filter divsion by 2 ",list(result))
 print("Sorted list is",sorted(list1))
 print("Reversed list is :",list(reversed(list1)))
 
+
+# 78. Built-in zip() Function
+
 # zip method
 l1 = [1,2,3,4,5,6]
 l2 = ['a','b','c','d']

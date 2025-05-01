@@ -1,5 +1,5 @@
 # 90. Practice - Using Mutable and Immutable Objects as Function Arguments
-def print_fav_fruits (person,fruit):
+def print_fav_fruits (person,fruits):
     # fruits_cpy = fruits.copy()
     print(id(fruits))
     fruits.pop()

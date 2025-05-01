@@ -39,7 +39,7 @@ print("info dict :",info)
 print("Copy of info dict :",copy_info)
 
 # 84. Strategies to Prevent Object Mutation
-# avoid this mutation tusing .copy() method
+# avoid this mutation tusing .copy() method 
 
 # example : same dict as uppper code
 copy_of_info = info.copy()

@@ -2,7 +2,7 @@
 
 # Ex: Immutable objcet as a,b as args
 def main_fun(a,b):
-    a = a+5
+    a = a+5 
     c = a+b
     return c
 
@@ -22,9 +22,10 @@ person1 = {
     'age':20
 }
 
+print("age before run the fun : ",person1['age'])
 incre_age(person1)
 # Actual value changed 
-print("Original age:", person1['age'])
+print("age after run the fun:", person1['age'])
 
 
 # avoid this same object using .copy() methods
