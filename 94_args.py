@@ -38,7 +38,7 @@ def get_person_info(**person):
 info = get_person_info(name = 'Ujjwal',address='Kalyani')
 print(info)
 
-
+print("\n\n")
 
 # 96. Practice - Working with Keyword Arguments
 def post_info(name,commit_qty,day):
@@ -50,7 +50,7 @@ info = post_info('Ujjwal',5,'Monday')
 print(info)
 
 # wrong way 
-info = post_info('Monday','Ujjwal',5)
+info = post_info('Monday','Ujjwal',5)hoin
 print(info)        # wrong output
 
 # To tackle this we have to use keyword args as ex
