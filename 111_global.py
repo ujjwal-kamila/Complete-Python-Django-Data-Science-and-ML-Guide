@@ -22,12 +22,25 @@ print(pi)
 
 
 # 112. Practice - Global and Local Variables
-
+# dir() ->Returns a list of names avilable in scope
 
 c = False
 def mult(a,b):
     c = a * b
+    print(dir())
     return c
+    
 print(mult(20,5))
 print(c)
-    
+print(dir())
+
+
+
+
+
+
+'''
+# Import the cal_area function from main.py
+from main import cal_area
+print(area(5))
+'''
