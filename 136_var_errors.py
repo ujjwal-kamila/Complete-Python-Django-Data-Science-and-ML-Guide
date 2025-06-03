@@ -27,7 +27,7 @@ else:
     print("File contains... \n")
     print(file.read())
 finally:
-    # In finally block, always try to close the file if it was opened
+# Checks if the variable named file exists in the global scope.
     if 'file' in globals() and file and not file.closed:
         file.close()
         print("\n...........")
