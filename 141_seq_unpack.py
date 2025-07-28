@@ -1,4 +1,6 @@
-# 141. Sequence Unpacking
+# 141. Sequence Unpacking :Sequence unpacking allows you to assign multiple values from a sequence (like list, tuple, string) to multiple variables in a single line.
+
+
 '''
 Unpacking menas extract values and assign them to variables
 only ordered type can do unpacking not unordered tpyes as dict 
