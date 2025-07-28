@@ -30,7 +30,7 @@ try:
     img= {
         "image_title": "Makaut"
     }
-    print(image_info(img))
+    print(image_info(img)) 
 except TypeError as e:
     print(e)
 finally:
