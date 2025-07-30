@@ -6,7 +6,7 @@ def create_user(username, email, password):
 user_info = {
     'username': 'ujjwal_kamila',
     'email': 'ujjwal@gmail.com',
-    'password': 'securePass123',
+    'password': 'securePass123'
 }
 
 created_usr = create_user(**user_info)
