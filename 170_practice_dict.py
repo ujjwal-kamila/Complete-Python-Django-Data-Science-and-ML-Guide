@@ -48,5 +48,3 @@ avg=total/count
 print(f"\nAverage marks : {avg}")
 
 
-
-
