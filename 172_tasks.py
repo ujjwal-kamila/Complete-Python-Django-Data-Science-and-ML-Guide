@@ -1,6 +1,6 @@
 # 172. TASKS - Working with For-In Loops
 
-# Tasks 1
+# Task 1
 '''
 1. Create a dict_to_list function that will convert the dict to a list of tuples
 2. Function should accept the dict, and return a list of tuples, each tuple must have pairs (key, value) from the dict
@@ -29,7 +29,7 @@ print(ans)
 
 
 
-# Tasks 2
+# Task 2
 '''
 
 1. Create a filter_list function that will filter the list
