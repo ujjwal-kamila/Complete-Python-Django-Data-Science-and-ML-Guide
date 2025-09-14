@@ -1,5 +1,8 @@
 # 213. Example - Methods for Finding Users by Username 
 # 214. Example - Method for Finding All Posts by a Specific User email
+# 215. Example - Retrieving User Posts by Email
+# 216. Example - Adding Parameter Types
+# 217. Example - Wrapping up the Forum, Users, and Posts Example
 
 class User:
     """Represents a forum user with basic identity info."""
@@ -58,6 +61,7 @@ class Forum:
                 found_posts.append(post)
         return found_posts
 
+
 # --- Test ---
 
 # Create a forum object
@@ -82,15 +86,25 @@ for post in forum.posts:
     print(f"  Content: {post.content}") 
 print("-" * 30)
 
-# find user by username
+# 213...find user by username
 print("\nTesting find_user_by_username:")
 print(forum.find_user_by_username('user1'))  
 print(forum.find_user_by_username('user3').email)
 print(f"Searching for a non-existent user: {forum.find_user_by_username('nobody')}")
 print("-" * 30)
 
-# find posts by email
+# 214...find posts by email
 print("\nTesting find_posts_by_email for 'user123@gmail.com':")
 user1_posts = forum.find_posts_by_email('user123@gmail.com')
 for post in user1_posts:
     print(post)
+    
+# 215.....Retrieving User Posts by Email
+user_email = 'user345@gmail.com'
+user_posts = forum.find_posts_by_email(user_email)
+if user_posts:
+    print(f"\nPosts by {user_email}:")
+    for post in user_posts:
+        print(post)
+else:
+    print(f"User with email {user_email} does not exist")
