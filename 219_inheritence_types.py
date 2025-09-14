@@ -1,6 +1,44 @@
 # 219. Inheritance in Object-Oriented Programming (OOP)
 
-# Type of Inheritance 
+# simple example 
+# Parent class
+class Vehicle:
+    def __init__(self, name):
+        self.name = name
+
+    def start(self):
+        print(f"{self.name} is starting...")
+
+    def stop(self):
+        print(f"{self.name} is stopping...")
+
+# Child class (inherits Vehicle)
+class Car(Vehicle):
+    def __init__(self, name, brand):
+        super().__init__(name)  # call parent constructor
+        self.brand = brand
+
+    def honk(self):
+        print(f"{self.brand} {self.name} goes 'Beep Beep!'")
+
+# Example
+v1 = Vehicle("Bike")
+v1.start()
+v1.stop()
+
+print()
+'''Car gets start() and stop() from Vehicle and adds honk()'''
+c1 = Car("Model S", "Tesla")
+ # from Vehicle
+c1.start()  
+c1.honk()    # from Car
+c1.stop()    # from Vehicle
+
+
+
+
+
+# Type of Inheritance Single ,Multiple,Multilevel ,Hiearchical 
 
 ''' Single Inheritance : Parent → Child'''
 print("\nSingle Inheritance Eg :")
