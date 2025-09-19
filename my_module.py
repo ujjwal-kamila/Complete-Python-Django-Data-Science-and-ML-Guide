@@ -1,3 +1,5 @@
 # my_module.py
+my_name = "Ujjwal"
+
 def greet(name):
-    print(f"Hello, {name}!")
+    return f"Hello, {name}!"
